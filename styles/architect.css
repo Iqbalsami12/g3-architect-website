@@ -13,6 +13,17 @@
 .display-flex{
   display: flex;
 }
+.bg-light{
+ background-color: rgba(255, 144, 14, 0.1);
+}
+
+.text-gray{
+  color:#424242;
+}
+.text-light-gray{
+  color: #727272;
+}
+
 /* header styles */
 
 /* navbar related styles */
@@ -28,4 +39,8 @@
 }
 .nav-link{
   text-decoration: none;
+}
+.navbar,.banner{
+  max-width: 1440px;
+  margin: 0 auto;
 }
