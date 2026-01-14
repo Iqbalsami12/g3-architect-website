@@ -5,7 +5,7 @@
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 400px;
   font-style: normal;
 }
 
@@ -82,11 +82,13 @@ main{
 /*team and feature styles  */
 .teams{
   align-items: center;
+  width: 100%;
 }
 .team-img-container{
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 24px;
+  max-width: 100%;
 }
 .our-features{
   margin-left:130px ;
@@ -112,8 +114,17 @@ main{
 
 /*responsive media query */
 @media screen and (max-width:576px) {
-  .navbar,.media-links{
+  .navbar,.media-links,.nav-links{
     flex-direction: column;
+  }
+
+  .team-img-container,.teams{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .our-features{
+    margin-left: 20px;
+    
   }
   
 }
