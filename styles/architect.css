@@ -118,6 +118,25 @@ main{
   
   padding: 15px 20px;
 }
+/* feature related styles */
+.features{
+  gap: 120px;
+}
+#feature-section-title{
+  border-left: 5px solid orange;
+  padding-left:10px ;
+}
+.feature-card .feature-title{
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  
+}
+.feature-card{
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+}
 
 /* facts related styles */
 
@@ -204,8 +223,10 @@ main{
   }
   .facts-container{
     grid-template-columns: repeat(2,1fr);
+    justify-items: center;
   }
   .sponsor-companies{
     grid-template-columns: repeat(3,1fr);
+    justify-items: center;
   }
 }
